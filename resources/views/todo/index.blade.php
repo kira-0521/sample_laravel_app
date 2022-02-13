@@ -11,7 +11,7 @@
             </div>
            <div class="list-group list-group-flush">
                @foreach ($todos as $todo)
-                   <a href="#" class="list-group-item list-group-item-action">
+                   <a href="{{ route('todo.show', $todo->id) }}" class="list-group-item list-group-item-action">
                        {{ $todo->content }}
                    </a>
                @endforeach
